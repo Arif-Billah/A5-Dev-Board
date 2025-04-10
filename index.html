@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<htm lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- DaisyUi CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+    .navbar{
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+        .container{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-template-rows: repeat(1,100px) 200px 200px;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+          
+        }
+
+       .box{
+            background-color: whitesmoke;
+
+        }
+        #box-4{
+            grid-row: span 5;
+        }
+        #box-1,#box-3{
+          
+          background-color: rgba(244, 247, 255, 1);
+          width: 263px;
+          height: 128px;
+          
+        }
+        #box-2{
+          width: 524px;
+          height: 128px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+      <div class="navbar  shadow-sm" style="margin-bottom: 50px;">
+        <div class="flex-1">
+          <a class=""> 
+            <img src="assets/logo.png" alt="logo">
+          </a>
+          <a class="btn btn-ghost text-xl">DevBoard</a>
+        </div>
+        <div class="flex-none">
+          
+            <!-- <div class="btn btn-circle">
+             
+                <img src="assets/checkbox.png" alt="">
+            </div>
+              <div><span>23</span></div> -->
+              <button class="btn ">
+               <img src="assets/checkbox.png" alt="">
+                <span>23</span>
+              </button>
+            
+            
+          </div>
+          <div class="">
+            <div  role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="assets/theme-btn.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+        <section>
+
+          <div class="container">
+            <div class="box" id="box-1">
+              <div class="card card-side">
+                <figure>
+                  <img
+                    src="assets/checkbox.png"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <h6 class="card-title">Task Assigned</h6>
+                  <p>6</p>
+                
+                </div>
+              </div>
+            </div>
+            <!--box 2 -->
+            <div class="box" id="box-2">
+              <div class="card card-side">
+                <figure>
+                  <img
+                    src="assets/calender.png"
+                    alt="calender" />
+                </figure>
+                <div class="card-body">
+                  <h6 class="card-title">Discover Something <br> New Today!</h6>
+                
+                </div>
+              </div>
+            </div>
+            <div class="box" id="box-3">Box-3</div>
+            <div class="box" id="box-4">Box-4</div>
+            <div class="box" id="box-5">Box-5</div>
+            <div class="box" id="box-6">Box-6</div>
+            <div class="box" id="box-7">Box-7</div>
+            <div class="box" id="box-8">Box-8</div>
+            <div class="box" id="box-9">Box-9</div>
+            <div class="box" id="box-10">Box-10</div>
+            
+          </div>
+
+           
+
+
+        </section>
+      
+</body>
+</htm
