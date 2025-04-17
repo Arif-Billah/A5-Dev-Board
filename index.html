@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htm lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,7 +53,7 @@
         }
 
         #box-5{
-           max-width: 300px; */
+           /* max-width: 300px;  */
         }
 
     </style>
@@ -102,7 +102,7 @@
                 </figure>
                 <div class="card-body">
                   <h6 class="card-title">Task Assigned</h6>
-                  <p>6</p>
+                  <p id="completedTask">6</p>
                 
                 </div>
               </div>
@@ -139,36 +139,26 @@
             </div>
            
             <div class="box" id="box-4">
-              <div class="card card-side">
+              <div class="card card-side justify-center">
                     <figure>
                     <img
                     src="assets/activity.png"
                       alt="Movie" />
                   </figure>
                   <div class="card-body">
-                    <h2 class="card-title">activity Log</h2>
+                    
+                    <h2 class="card-title justify-center">activity Log</h2>
+                    
                     
                     <div class="card-actions justify-center">
                       <button class="btn btn-primary">Clear History</button>
                     </div>
                   </div>
                 </div>
+                <hr>
             </div>
 
-             <!-- <div class="box" id="box-5">
-              <div class="card w-96 card-sm shadow-sm">
-                <div class="card-body">
-                  <h2 class="card-title">Shop Ease</h2>
-                  <h2 class="card-title">Fix Mobile Button Issue </h2>
-                  <p>Debug using Chrome DevTools, check for overlappin</p>
-                  <div class="justify-end card-actions">
-                    <p>Dead Line <br><strong>21 March 2025</strong></p>
-                     
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </div>  -->
+          
             <div class="box" id="box-5">
               <div class="card w-50 card-sm shadow-sm">
                 <div class="card-body">
@@ -178,7 +168,7 @@
                   <div class="justify-end card-actions">
                     <p>Dead Line <br><strong>21 March 2025</strong></p>
                      
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button id="btn-5" class="btn btn-primary">Buy Now</button>
                   </div>
                 </div>
               </div>
@@ -262,6 +252,6 @@
 
 
         </section>
-      
+        <script src="js/script.js"></script>
 </body>
-</htm
+</html>
