@@ -12,7 +12,7 @@
     <style>
 
     .navbar{
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
@@ -21,30 +21,39 @@
         .container{
           display: grid;
           grid-template-columns: repeat(4,1fr);
-          grid-template-rows: repeat(1,100px) 200px 200px;
-          gap: 20px;
-          justify-content: center;
-          align-items: center;
+          grid-template-rows: repeat(1,150px) 230px 230px;
+          gap: 40px 10px;
+        
+          /* justify-content: center;
+          align-items: center; */
+          /* max-width: 1146px; */
           
         }
 
        .box{
-            background-color: whitesmoke;
+            /* background-color: whitesmoke; */
+            background-color: rgba(244, 247, 255, 1);
 
         }
         #box-4{
             grid-row: span 5;
+            /* max-width: 366px; */
         }
         #box-1,#box-3{
           
           background-color: rgba(244, 247, 255, 1);
-          width: 263px;
-          height: 128px;
+          /* width: 263px;
+          height: 128px; */
           
         }
         #box-2{
-          width: 524px;
-          height: 128px;
+          /* width: 524px;
+          height: 128px; */
+          background-color: #9BA8F8;
+        }
+
+        #box-5{
+           max-width: 300px; */
         }
 
     </style>
@@ -103,7 +112,7 @@
               <div class="card card-side">
                 <figure>
                   <img
-                    src="assets/calender.png"
+                    src="assets/board.png"
                     alt="calender" />
                 </figure>
                 <div class="card-body">
@@ -112,14 +121,140 @@
                 </div>
               </div>
             </div>
-            <div class="box" id="box-3">Box-3</div>
-            <div class="box" id="box-4">Box-4</div>
-            <div class="box" id="box-5">Box-5</div>
-            <div class="box" id="box-6">Box-6</div>
-            <div class="box" id="box-7">Box-7</div>
-            <div class="box" id="box-8">Box-8</div>
-            <div class="box" id="box-9">Box-9</div>
-            <div class="box" id="box-10">Box-10</div>
+
+            <div class="box" id="box-3">
+              <div class="card card-side">
+                <figure>
+                  <img
+                    src="assets/calender.png"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <h6 class="card-title">Task Assigned</h6>
+                  <p>6</p>
+                
+                </div>
+              </div>
+            
+            </div>
+           
+            <div class="box" id="box-4">
+              <div class="card card-side">
+                    <figure>
+                    <img
+                    src="assets/activity.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">activity Log</h2>
+                    
+                    <div class="card-actions justify-center">
+                      <button class="btn btn-primary">Clear History</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+             <!-- <div class="box" id="box-5">
+              <div class="card w-96 card-sm shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Shop Ease</h2>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <p>Debug using Chrome DevTools, check for overlappin</p>
+                  <div class="justify-end card-actions">
+                    <p>Dead Line <br><strong>21 March 2025</strong></p>
+                     
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>  -->
+            <div class="box" id="box-5">
+              <div class="card w-50 card-sm shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Shop Ease</h2>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <p>Debug using Chrome DevTools, check for overlappin</p>
+                  <div class="justify-end card-actions">
+                    <p>Dead Line <br><strong>21 March 2025</strong></p>
+                     
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="box" id="box-5">
+              <div class="card w-50 card-sm shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Shop Ease</h2>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <p>Debug using Chrome DevTools, check for overlappin</p>
+                  <div class="justify-end card-actions">
+                    <p>Dead Line <br><strong>21 March 2025</strong></p>
+                     
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box" id="box-5">
+              <div class="card w-50 card-sm shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Shop Ease</h2>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <p>Debug using Chrome DevTools, check for overlappin</p>
+                  <div class="justify-end card-actions">
+                    <p>Dead Line <br><strong>21 March 2025</strong></p>
+                     
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box" id="box-5">
+              <div class="card w-50 card-sm shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Shop Ease</h2>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <p>Debug using Chrome DevTools, check for overlappin</p>
+                  <div class="justify-end card-actions">
+                    <p>Dead Line <br><strong>21 March 2025</strong></p>
+                     
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box" id="box-5">
+              <div class="card w-50 card-sm shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Shop Ease</h2>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <p>Debug using Chrome DevTools, check for overlappin</p>
+                  <div class="justify-end card-actions">
+                    <p>Dead Line <br><strong>21 March 2025</strong></p>
+                     
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box" id="box-5">
+              <div class="card w-50 card-sm shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title">Shop Ease</h2>
+                  <h2 class="card-title">Fix Mobile Button Issue </h2>
+                  <p>Debug using Chrome DevTools, check for overlappin</p>
+                  <div class="justify-end card-actions">
+                    <p>Dead Line <br><strong>21 March 2025</strong></p>
+                     
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             
           </div>
 
